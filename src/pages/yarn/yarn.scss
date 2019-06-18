@@ -1,0 +1,261 @@
+.sd-tabs.bordered-title-tabs.ant-tabs.ant-tabs-line {
+    .ant-select-selection.ant-select-selection--single {
+        height: 30px;
+    }
+
+
+    .box-shadow {
+        box-shadow: 0 0 4px 1px rgba(80, 84, 90, 0.1);
+    }
+
+    .margin-for-shadow {
+        margin: 1px;
+    }
+
+    // 修改tabs样式
+
+    .ant-tabs-bar.ant-tabs-top-bar {
+        background: #FFFFFF;
+        border-radius: 4px;
+        border-bottom: 2px solid #D3E4FF;
+        margin: 3px 1px 0;
+        @extend .box-shadow;
+
+        .ant-tabs-tab {
+            padding: 9px 15px 13px;
+            margin-left: 20px;
+            font-size: 15px;
+            font-family: SourceHanSansCN-Regular, "Microsoft YaHei", sans-serif;
+            font-weight: 400;
+            color: rgba(65, 97, 136, 1);
+        }
+    }
+
+    // 左右平分
+    .part {
+        overflow: hidden;
+        margin: 1px;
+        @extend .box-shadow;
+
+
+        & > div {
+            width: 50%;
+            height: 100%;
+
+
+            &.left {
+                float: left;
+
+                &.ant-card {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-right: 1px solid rgba(217, 217, 217, 0.5);
+                }
+            }
+
+            &.right {
+                float: right;
+
+                &.ant-card {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+    }
+
+    .block-title {
+        //padding-top: 10px;
+        font-family: SourceHanSansCN-Medium, "Microsoft YaHei", sans-serif;
+        color: #1B67E0;
+        line-height: 36px;
+        font-size: 14px;
+        font-weight: 500;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 3px;
+            height: 22px;
+            vertical-align: middle;
+            background: #1B67E0;
+            border-radius: 2px;
+            margin-right: 10px;
+            margin-top: -4px;
+            margin-left: 0;
+        }
+    }
+
+    .block-body {
+        position: relative;
+    }
+
+    // 白色背景
+    .block-wrapper {
+        background: #ffffff;
+    }
+
+    .chart-table {
+        width: 100%;
+        height: 300px;
+    }
+
+    .ant-card.block-wrapper {
+        .ant-card-head {
+            padding: 0 20px 0 10px;
+            border: none;
+
+            .ant-card-head-wrapper {
+                border-bottom: 1px solid #E7E7E7;
+
+                .ant-card-head-title {
+                    padding-left: 8px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-family: SourceHanSansCN-Medium, "Microsoft YaHei", sans-serif;
+                    font-weight: 500;
+                    color: rgba(42, 48, 54, 1);
+                }
+            }
+
+
+            .ant-card-extra {
+                color: #2A3036;
+                font-size: 13px;
+                font-weight: 500;
+                padding: 0;
+            }
+
+            .sd-sub-title {
+                font-size: 12px;
+                //font-family: SourceHanSansCN-Regular;
+                font-weight: 400;
+                color: #6C8BBD;
+                margin-left: 12px;
+            }
+        }
+
+        .ant-card-body {
+            padding: 12px 0 0 0;
+        }
+
+        &.no-title-border {
+            padding-top: 10px;
+
+            .ant-card-head-wrapper {
+                border-bottom: none;
+            }
+
+            .ant-card-body {
+                padding-top: 0;
+            }
+        }
+    }
+
+    // Top20 翻页
+    .chart-pages {
+
+        .sd-anchor-button {
+            font-size: 12px;
+            color: rgba(128, 128, 128, 1);
+
+            &.active {
+                color: #0F70E0;
+            }
+        }
+    }
+
+    // 修改radio样式
+    .radio-button {
+        margin-right: 10px;
+
+        .ant-radio-button-wrapper {
+            height: 30px;
+            box-sizing: border-box;
+            margin: 0 4px;
+            background: #EDF2FA;
+            color: #3F464C;
+            border-color: transparent;
+            border-width: 0;
+            border-radius: 2px;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 500;
+
+            &::before {
+                content: none;
+            }
+
+            &:first-child {
+                border-radius: 2px;
+            }
+
+            &:last-child {
+                border-radius: 2px;
+            }
+
+            &:hover {
+                color: #0B72DB;
+                background: #E5F3FE;
+            }
+
+            &.ant-radio-button-wrapper-checked {
+                background: #E5F3FE;
+                color: #0B72DB;
+                border-radius: 2px;
+                box-shadow: none;
+
+                &:focus-within {
+                    outline: none;
+                }
+            }
+
+            span {
+                font-size: 13px;
+            }
+
+
+        }
+
+        &.wireframe {
+            .ant-radio-button-wrapper {
+                background: transparent;
+                color: #808080;
+                border: 1px solid #808080;
+                padding: 0 12px;
+                height: 26px;
+                line-height: 26px;
+
+                &.ant-radio-button-wrapper-checked {
+                    background: transparent;
+                    color: #1A83ED;
+                    border-color: #1A83ED;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    // 修改日历样式
+    .ant-calendar-picker {
+
+        .ant-calendar-picker-input.ant-input {
+            font-size: 12px;
+        }
+    }
+
+    .un-success-tables {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+        width: 100%;
+        height: 100%;
+
+        &.show {
+            opacity: 1;
+            transition: opacity 1s;
+        }
+    }
+
+}
